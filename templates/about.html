@@ -1,0 +1,55 @@
+
+{% extends "basic.html" %}
+{% load static %}
+{% block title %} About {% endblock title %}
+{% block body %}
+{% block stylecss %}
+{% endblock stylecss %}
+<section id="about" class="about section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p><strong>Hi, I'm Rajeshkumar K,</strong> a Python Full-Stack Developer based in Bangalore. 
+      I specialize in both front-end and back-end web development, creating dynamic and efficient web applications. 
+      With a strong foundation in both areas, I aim to build modern, scalable, and user-friendly websites that meet industry standards. 
+      I have a solid understanding of front-end technologies like HTML5, CSS, JavaScript, and Bootstrap. 
+      I focus on creating clean, efficient, and intuitive designs to ensure that users have a smooth and engaging experience across devices. 
+      On the back-end technologies, including Python Building robust back-end systems using Python with frameworks like Django and Flask. 
+      SQL designing and managing database for scalable application Git&GitHub managing version control and collaborating on projects. 
+      Heroku Deploying and maintaining applications in the cloud for easy access and scalability.<br>  
+    </p>
+  </div>
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4 justify-content-center">
+      <div class="col-lg-4">
+        <img src="{% static 'assets/img/rk.png' %}" class="img-fluid" alt="">
+      </div>
+      <div class="col-lg-8 content">
+        <h2>Full-Stack Python Developer.</h2>
+        <p class="fst-italic py-2">
+        </p> 
+        <div class="row">
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>Rajeshkumar K</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 8248190818</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bangalore</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master of Computer Science</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>rajeshraj8558@gmail.com</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+            </ul>
+          </div>
+        </div>
+        <p class="py-2">
+          I am passionate about solving complex problems and continuously improving my skills. My object is to contribute to innovative projects, 
+          Learn from experienced teams and further Develop my expertise as a Full Stack Developer. I have worked on several projects using the front-end, including implementing login authenticate and signup pages to ensure access and 
+          a personalized user experience. My focus is on creating high-performing, secure, and user-centric web applications. This portfolio showcases my journey and the project.
+          I have worked on it, and I am excited to collaborate and create an impactful solution. <br>    
+        </p>
+      </div>
+    </div>
+  </div>  
+{% endblock body %}

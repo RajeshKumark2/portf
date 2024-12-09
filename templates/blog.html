@@ -1,0 +1,28 @@
+{% extends "basic.html" %}
+{% block title %} Blog {% endblock title %}
+{% block body %}
+{% load static %}
+  <section id="services" class="services section">
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Welcome to My Blog</h2>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          
+          {% for  post in posts reversed %}
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" >
+              <div class="col-lg-4" data-aos="fade-right">
+                <img src="{{post.img.url}}" class="img-fluid" alt="no-image">
+              </div>
+                <br>
+              <div class="icon"><i class=""></i></div>
+                <h4 class="title" class="stretched-link">{{post.title}}</h4>
+                <p class="description">{{post.description}}</p>
+                <h6>Posted By : <b>{{post.authname}}</b></h6>
+                <p>Posted on : <b>{{post.timeStamp}}</b></p>
+            </div>
+          {% endfor %}
+        </div>
+    </div>
+  </section>
+{% endblock body %}
